@@ -71,7 +71,7 @@ function VoiceAssistant() {
   }
 
   function openWebSocketConnection() {
-    const ws_url = process.env.NEXT_PUBLIC_WEBSOCKET_URL || 'ws://4474-41-217-206-254.ngrok-free.app/listen';
+    const ws_url = process.env.NEXT_PUBLIC_WEBSOCKET_URL || 'wss://4474-41-217-206-254.ngrok-free.app/listen';
     wsRef.current = new WebSocket(ws_url);
     wsRef.current.binaryType = 'arraybuffer';
 
